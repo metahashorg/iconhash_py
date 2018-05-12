@@ -6,7 +6,7 @@ We are making a DCGAN to generate newer variants of [Planets](https://drive.goog
 This Convolutional Generative Adversarial Networks mainly consists of two different networks, the genarator and the discriminator. The Generator tries to generates images from random noise and fools the discriminator in the process.
 
 The Generator model consist of a block of layers that consist of Batchnormalization, upsampling followed by a convolution with relu activation. There are 4 such blocks used only the forth block contains tanh function as the activation of the convolution layer. The Discriminator model is a simple deep convolution network trying to distinguish between true or fake pokemon images. The combined model is compiled adam optimizer(learning rate=0.0002), with binary cross entropy loss. 
-The training process for 7000 iterations is shown in this gif below:
+The training process for 7000 first iterations is shown in this gif below:
 <p align="center">
   <img width="250" height="250" src="https://github.com/metahashorg/iconhash_py/blob/master/output.gif">
 </p>
