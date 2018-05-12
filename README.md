@@ -25,14 +25,16 @@ pip install
 
 ## Usage
 ```
+# The folder should be three files (iconhash.py, generator.json, gen.h5)
 cd Script
+
 # Generate 128x128 planet icon using DCGAN
 .../python iconhash.py [parameter1] [parameter2]
 ```
 ##### Parameter1
-* Hash_address (0x0077EA346BCE078C4701FB1C2B8031CBE9358D897A164879DF)
-* [file.tsv](https://github.com/metahashorg/iconhash_py/blob/master/example.tsv) with hash addresses
-* [file.txt](https://github.com/metahashorg/iconhash_py/blob/master/example.txt) with hash addresses
+* Metahash Address (0x0077EA346BCE078C4701FB1C2B8031CBE9358D897A164879DF)
+* [file.tsv](https://github.com/metahashorg/iconhash_py/blob/master/example.tsv) with Metahash Addresses
+* [file.txt](https://github.com/metahashorg/iconhash_py/blob/master/example.txt) with Metahash Addresses
 ##### Parameter1
 * Output folder
 
