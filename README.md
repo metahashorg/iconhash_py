@@ -35,10 +35,36 @@ cd Script
 .../python iconhash.py parameter1 parameter2
 ```
 ##### Parameter1 could be one of the following:
-*  a Metahash Address (0x0077EA346BCE078CXXXXFB1C2B8031CBE9358D897A164879DF)
+*  a Metahash Address (0x0083504341c15f066955c2ac999b356894cde5c20f5a0ee9ac)
 * [file.tsv](https://github.com/metahashorg/iconhash_py/blob/master/example.tsv) a file containing several Metahash Addresses
 * [file.txt](https://github.com/metahashorg/iconhash_py/blob/master/example.txt) a file containing several Metahash Addresses
 ##### Parameter2
 * Output folder
+##### Финальный результат
+* Png файлы для каждого Matahash Adsress с изображением(иконкой) планеты (0x0083504341c15f066955c2ac999b356894cde5c20f5a0ee9ac.png) разрешением 128x128
 
+## Пример использования скрипта
+```
+cd Script
+/opt/anaconda3/bin/python iconhash.py example.txt ./Example/
+```
+Файл example.txt содержил 10 Matahash Adsress созданных при помощи скрипта [crypt_example.py](https://github.com/metahashorg/crypt_example_py)
+В папке Example создалось 10 png файлов для каждого Matahash Adsress из файла example.txt
+![image_test_all](http://images.vfl.ru/ii/1526465475/cb414f5b/21764534.png)
 
+## Тест Matahash_Adsress_Mistake
+Проверка скрипта на то, что при неправильном вводе одного или несколько символов в адресе, планета на иконке меняется кардинально. На вход скрипты подавались следующие Matahash Adsress:
+
+0x002cfbe84acd405627302b35c081c36f8ebafb4df075ad9f70
+0x002cfbe84acd405627302b35c081c36f8obafb4df075ad9f70
+0x002cfbe84acd405627302b35c081c36f8odafb4df075ad9f70
+0x002cfbe84acd405627302b35c0e1c36f8ebafb4df075ad9f70
+0x002cfbe84acd405627302b35c0e7c36f8ebafb4df075ad9f70
+0x002cfbe84acd405627302b35o081c36f8ebafb4df075ad9f70
+0x002cfbe84acd405627302b85c081c36f8ebafb4df075ad9f70
+0x002cfbe84acd4O5627302b35c081c36f8ebafb4df075ad9f70
+0x002cfbe85acd405627302b35c081c14f8ebafb4df075ad9f70
+0x002cfbe85acd405627302b35c081c36f8ebafb4df075ad9f70
+
+Иконка планеты для каждого соответственно:
+![image_test_mistake](http://images.vfl.ru/ii/1526466151/24da5a70/21764646.png)
