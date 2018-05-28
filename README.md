@@ -3,7 +3,7 @@
 
 We are making a DCGAN to generate newer variants of [Planets](https://drive.google.com/drive/folders/1NwupUPLIPuQZG38Lm1CT0vdofP6I5QgA?usp=sharing) (link to training dataset) from random noise inputs.
 
-This Convolutional Generative Adversarial Network consists of two different networks, the genarator and the discriminator. The Generator tries to generate images from random noise, while the Discriminator tries to distinguish real images from the  generated ones.
+This Convolutional Generative Adversarial Network consists of two different networks, the generator and the discriminator. The Generator tries to generate images from random noise, while the Discriminator tries to distinguish real images from the  generated ones.
 
 The Generator model includes a block of layers consisting of Batchnormalization, upsampling followed by a convolution with relu activation. There are 4 such blocks used tanh function as the activation of the convolution layer. 
 The Discriminator model is a simple deep convolution network. 
@@ -44,7 +44,7 @@ cd Script
 ##### Parameter2
 * Output folder
 ##### Outputs
-* The script returns a unique planet picture as a png file with a resolution of 128x128 for every Matahash Address from input
+* The script returns a unique planet picture as a png file with a resolution of 128x128 for every Metahash Address from input
 (ex. 0x0083504341c15f066955c2ac999b356894cde5c20f5a0ee9ac.png)
 
 ## Example
